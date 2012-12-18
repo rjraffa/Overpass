@@ -71,10 +71,12 @@
             <h1>Overpass!</h1>
             <h2>Drag the text to the boxes</h2>
             
-            <h3>First pick your paragraph! Input values 1, 2, or 3!</h3>
+            <h3>First pick your topic! Input values 1, 2, or 3!</h3>
+            <h3>Then drag the paragraphs to the correct type.</h3>
             <p>Type:<input id="whichText" value ="1" />
             <button onclick="textChooser()">Submit</button></p>
-            
+
+        	<div id="postsSection">            
             <p id="titleOne"></p>
             <div id="div1" ondrop="drop(event,'drag1')" ondragover="allowDrop(event)"></div>
             <p id="titleTwo"></p>
@@ -84,6 +86,8 @@
             <p id="titleFour"></p>
             <div id="div4" ondrop="drop(event,'drag4')" ondragover="allowDrop(event)"></div>
             <p id="titleFive"></p>
+            </div>
+            <div id="textRight">
 			<div id="drag1" draggable="true" ondragstart="drag(event)"></div>
             <br>
             <div id="drag3" draggable="true" ondragstart="drag(event)"></div>
@@ -91,7 +95,7 @@
 			<div id="drag4" draggable="true" ondragstart="drag(event)"></div>
 			<br>
 			<div id="drag2" draggable="true" ondragstart="drag(event)"></div>
-
+			</div>
 			<script>
 			function textChooser() {
 
