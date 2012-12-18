@@ -6,7 +6,7 @@ base = {
             id: 20,
             post_type: {
                 id: 40,
-                title: "Main Argument"
+                title: "Main\nArgument"
             }
         }
 
